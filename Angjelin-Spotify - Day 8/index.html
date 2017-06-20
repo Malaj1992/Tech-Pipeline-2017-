@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <title></title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    </head>
+    <body>
+    <audio id="audio1" controls>
+            <source src="" type="audio/mp3">
+    </audio>
+    <button id="prevBtn" onclick="juke.loadPrev()">Prev</button>
+    <button id="playBtn" onclick="juke.playIt()">Play</button>
+    <button id="stopBtn" onclick="juke.stopIt()">Stop</button>
+    <button id="nextBtn" onclick="juke.loadNext()">Next</button>
+
+    <input id="addSong" value="Input song URL"></input>
+    <button id="submitBtn" onclick="juke.addSong()">Add Song</button>
+
+        <button id="spotifyBtn" onclick="juke.spotiSong()">Add Spotify Sample</button>
+
+    <span id="title"></span>
+    <ul li></ul>
+    <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

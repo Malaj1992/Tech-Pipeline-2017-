@@ -1,0 +1,91 @@
+body{
+  font-family: 'courier';
+  font-size: 24px;
+  color: blue ;
+  background-image: url(images/Cassette91.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.control{
+  text-align: center;
+}
+#play {
+  background-image: url(images/play.png);
+  background-size: cover;
+  height:100px;
+  width: 100px;
+  display: inline-block;
+}
+#play:active{
+  height:100px;
+  width: 100px;
+  text-align: center;
+}
+#pause{
+  background-image: url(images/pause.png);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+
+}
+#pause:active{
+  height: 100px;
+  width: 100px;
+}
+#rewind {
+  background-image: url(images/rewind.png);
+  background-size: cover;
+  height:100px;
+  width: 100px;
+  display: inline-block;
+}
+#rewind:active{
+  height:150px;
+  width: 110px;
+  text-align: center;
+}
+#forward {
+  background-image: url(images/forward.png);
+  background-size: cover;
+  height:100px;
+  width: 100px;
+  display: inline-block;
+}
+#forward:active{
+  height:100px;
+  width: 100px;
+  text-align: center;
+}
+#stop {
+  background-image: url(images/stop.png);
+  background-size: cover;
+  height:100px;
+  width: 100px;
+  display: inline-block;
+}
+
+#stop:active{
+  height: 100px;
+  width: 100px;
+}
+#shuffle {
+  background-image: url(images/shuffle.png);
+  background-size: cover;
+  height:100px;
+  width: 100px;
+  display: inline-block;
+}
+#shuffle:active{
+  height: 100px;
+  width: 100px;
+}
+
+.spotifySearch{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 8px;
+}
+
+

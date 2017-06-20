@@ -1,0 +1,188 @@
+body {
+	width:100%;
+	color: #fff;
+	line-height:20px;
+	position: fixed;
+	position: absolute;
+}
+html,body{
+	padding:0;
+	margin:0;
+	width:100%
+}
+nav a {	
+	display: block;
+	padding: 30px 30px;
+	text-decoration: none;
+	color:#fff;
+	font-family: arial black;
+	font-size: 16px;
+	margin: 0 30px;
+	letter-spacing: 1px;
+}
+nav a:hover {
+	color: red;
+}
+nav ul,
+nav ul li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+nav > ul { /*navgiavtion color */
+	background: black;
+	text-align: right;
+	width: 100%;
+	max-width:auto;
+	height: 90px;
+	
+}
+nav > ul > li {
+	display: inline-block;
+}
+nav > ul > li:first-child {
+	border-left: none;
+}
+
+.container{
+	width: 100%;
+	max-width:auto;
+	margin: 0;
+}
+
+
+#logo{
+	color: white;
+	letter-spacing: 2px;
+	font-family: arial black;
+	font-size: 20px;
+	float: left;
+	text-decoration:none;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+audio { 
+   display:none;
+}
+
+.sub-menu-parent {
+	position: relative;
+	font-size: 12px;
+}
+.sub-menu {
+  visibility: hidden;
+  /* hides sub-menu */
+  opacity: .6;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.7s ease-in-out .3s, visibility 5s linear 0.3s, z-index 0s linear 0.01s;
+  
+}
+.sub-menu-parent:hover .sub-menu {
+	
+  visibility: visible;
+  /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.2s;
+  /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+/* presentational */
+
+
+#box1{
+	height: 100vh;
+	width: 100%;
+	background-image: url(kid.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+#box2{
+	height: 100vh;
+	width: 100%;
+	background-image: url(cup.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+	
+
+#box3{
+	height: 100vh;
+	width: 100%;
+	background-image: url(hand.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+	
+#box1 > h1{ 
+	padding-top: 12px;
+	text-align: center;
+	font-family: arial black;
+	font-size: 12px;
+	color: white;
+	display: table-cell;
+	vertical-align: baseline;
+	padding-left: 70px;
+	padding-right: 640px;
+    padding-top: 150px;
+    line-height: 25px;
+}
+
+#box2 > h2 {
+    padding-top: 12px;
+	text-align: center;
+	font-family: arial black;
+	font-size: 12px;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 70px;
+	padding-right: 600px;
+}
+#box3 > h3{
+    padding-top: 12px;
+	text-align: center;
+	font-family: arial black;
+	font-size: 12px;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 70px;
+	padding-right: 600px;
+    
+}
+
+
+/* responsive design */
+
+@media (max-width: 768px){
+    nav a
+    nav ul
+    nav ul li {
+        float: none;
+        text-align: center;
+        width: 100%;
+        logo{
+            display: none;
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+	
